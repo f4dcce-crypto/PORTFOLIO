@@ -1,0 +1,735 @@
+.html {
+    scroll-behavior: smooth;
+}
+.body{
+background-color: #f8ecf0; 
+background-image: radial-gradient(#f888c6 15%, transparent 16%);
+background-size: 24px 24px;
+display: flex;
+flex-direction: column;
+align-items: center;
+cursor: url('hredd.png') 16 16, auto;
+}
+
+.title {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.fer-image {
+    object-fit: cover;
+    transform: rotate(-1.5deg);
+
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 2.5rem;
+    background-color: #ffd8e7; /* Franja rosa pastel sólida */
+    padding: 1.1rem 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.nav-links {
+display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4.5rem; /* Distancia amplia entre links */
+    padding: 0 8rem; /* Espaciado interno para los links */
+    }
+
+
+.nav-links a {
+font-family: 'Gaegu', cursive;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: #3d2d24;
+    text-transform: lowercase;
+    white-space: nowrap;
+    letter-spacing: 1.5px;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    }
+
+
+.nav-links a:hover {
+    opacity: 0.5;
+    transform: translateY(-1px);
+}
+
+.logo {
+    font-family: 'Gaegu', cursive;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #3d2d24;
+    letter-spacing: -0.5px;
+}
+
+.header {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.title {
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+.fer-image {
+            object-fit: cover;
+            transform: rotate(-1.5deg);
+        }
+
+.about-collage-container {
+            width: 90%;
+            min-width: 1500px;
+            min-height: 820px;
+            margin: 3rem auto;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #faf5d9;
+            padding: 4rem 2rem;
+            border-radius: 40px;
+        }
+
+/*izq*/
+        .photos-column-left {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%) rotate(-6deg);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            background: #f8bbd0;
+            padding: 8px;
+            border-radius: 6px;
+            box-shadow: 6px 6px 15px rgba(0,0,0,0.1);
+            z-index: 2;
+        }
+
+/*derecha*/
+        
+.photos-column-right {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%) rotate(7deg);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            background: #f8bbd0;
+            padding: 8px;
+            border-radius: 6px;
+            box-shadow: 6px 6px 15px rgba(0,0,0,0.1);
+            z-index: 2;
+        }
+
+        .mini-frame {
+            width: 165px;
+            height: 185px;
+            overflow: hidden;
+            border-radius: 3px;
+            background: #fff;
+        }
+
+        .mini-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+/*rosa*/        
+
+.pink-speech-bubble {
+            background-color: #f7d6e0;
+            border-radius: 40px;
+            padding: 3.5rem 3rem 2.5rem 3rem;
+            max-width: 840px;
+            min-height: 500px;
+            position: relative;
+            z-index: 3;
+            box-shadow: 4px 8px 15px rgba(0, 0, 0, 0.04);
+            transform: rotate(-1deg);
+        }
+
+        .about-title {
+            font-family: 'Gaegu', cursive;
+            font-size: 3.8rem;
+            font-weight: 700;
+            color: #4a3b32;
+            position: absolute;
+            top: -50px;
+            right: 90px;
+            transform: rotate(3deg);
+            margin: 0;
+        }
+
+        .handwritten-body {
+            font-family: 'Gaegu', cursive;
+            font-size: 1.55rem;
+            color: #4a3b32;
+            line-height: 1.45;
+        }
+
+        .handwritten-body p {
+            margin-bottom: 0.8rem;
+        }
+
+        .pill-btn {
+    background: #f16ca4;
+    color: #ffffff;
+    padding: 0.7rem 1.6rem;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    box-shadow: 3px 3px 0px #ffaed6;
+    transition: transform 0.2s ease;
+    justify-content: center;    
+    text-decoration: none;
+    text-align: center;
+}
+
+    .pill-btn:hover {
+    transform: translateY(-3deg);
+    align-items: center;
+    text-align: center;
+    }
+
+    /* LAPTOP CONTAINER */
+.interactive-laptop {
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 780px; 
+height: auto;
+user-select: none;
+}
+
+/* LAPTOP LID */
+.laptop-lid {
+  background: #f3c2d3;
+  border: 3px solid #3d2d24;
+  border-radius: 20px 20px 8px 8px;
+  padding: 12px 12px 6px 12px;
+  width: 100%;
+  box-shadow: inset -3px -3px 0px rgba(0,0,0,0.05);
+}
+
+.laptop-screen {
+  background-color: #faf5d9;
+  /* Fondo de cuadrícula pastel */
+  background-image: 
+    linear-gradient(#eadaa2 1px, transparent 1px),
+    linear-gradient(90deg, #eadaa2 1px, transparent 1px);
+  background-size: 16px 16px;
+  border: 2.5px solid #3d2d24;
+  border-radius: 12px;
+  height: 550px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.laptop-webcam {
+  width: 6px;
+  height: 6px;
+  background-color: #3d2d24;
+  border-radius: 50%;
+  margin-top: 6px;
+}
+
+.laptop-desktop {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  position: relative;
+}
+
+/* DESKTOP ICONS */
+.desktop-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.desktop-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+.desktop-icon:hover {
+  transform: scale(1.05);
+}
+
+.folder-img {
+  font-size: 6.2rem;
+  line-height: 1;
+}
+
+.icon-label {
+  font-family: 'Gaegu', cursive;
+  font-size: 0.85rem;
+  font-weight: 1800;
+  background: #ffffff;
+  border: 1.5px solid #3d2d24;
+  border-radius: 4px;
+  padding: 1px 6px;
+  color: #3d2d24;
+  margin-top: 2px;
+}
+
+/* WINDOWS (EXPLORER & PLAYER) */
+.laptop-window {
+  display: none; /* Se activa con JS (display: flex) */
+  flex-direction: column;
+  position: absolute;
+  top: 15px;
+  left: 50px;
+  width: 260px;
+  height: 180px;
+  background: #ffffff;
+  border: 2px solid #3d2d24;
+  border-radius: 6px;
+  box-shadow: 4px 4px 0px rgba(61, 45, 36, 0.2);
+  z-index: 10;
+  overflow: hidden;
+}
+
+.window-titlebar {
+  background: #f8bbd0;
+  border-bottom: 2px solid #3d2d24;
+  padding: 3px 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.window-title {
+  font-family: 'Gaegu', cursive;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #3d2d24;
+}
+
+.window-btn-close {
+  background: #f16ca4;
+  border: 1.5px solid #3d2d24;
+  color: #fff;
+  font-weight: bold;
+  font-size: 0.75rem;
+  width: 18px;
+  height: 18px;
+  border-radius: 3px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.window-btn-close:hover {
+  background: #e04886;
+}
+
+.window-content {
+  padding: 10px;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.files-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.file-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Gaegu', cursive;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.file-item:hover {
+  opacity: 0.7;
+}
+
+.player-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+}
+
+.player-content video, .player-content img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.bezel-brand {
+  font-family: 'Gaegu', cursive;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #3d2d24;
+  margin-top: auto;
+  margin-bottom: 2px;
+}
+
+/* HINGE & BASE */
+.laptop-hinge {
+  width: 120px;
+  height: 6px;
+  background: #3d2d24;
+  border-radius: 0 0 4px 4px;
+}
+
+.laptop-base {
+  background: #f3c2d3;
+  border: 3px solid #3d2d24;
+  border-radius: 4px 4px 18px 18px;
+  width: 100%;
+  padding: 8px 15px 12px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.trackpad {
+  width: 50px;
+  height: 22px;
+  border: 2px solid #3d2d24;
+  border-radius: 4px;
+  margin-top: 6px;
+  background: #faf5d9;
+}
+
+/* --- MODAL Y FONDO OSCURO --- */
+#scrapbook-modal {
+  position: fixed;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+}
+
+/* --- EL LIBRO --- */
+.scrapbook-book {
+    display: flex;
+    width: 900px;
+    height: 600px;
+  background: #fcf7d9; /* Color hoja crema */
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.close-book-btn {
+    position: absolute;
+    top: -15px; right: -15px;
+    background: #fff;
+    border: 2px solid #3d2d24;
+    border-radius: 50%;
+    width: 40px; height: 40px;
+    font-size: 1.2rem;
+    font-family: 'Gaegu', cursive;
+    cursor: pointer;
+    z-index: 100;
+}
+
+/* --- LAS PÁGINAS CON LÍNEAS --- */
+.scrapbook-page {
+    flex: 1;
+    padding: 40px;
+    position: relative;
+  /* Magia para hacer las líneas de cuaderno */
+    background-image: repeating-linear-gradient(transparent, transparent 28px, #e8dfc3 29px);
+    background-position: 0 10px;
+}
+.left-page { border-radius: 20px 0 0 20px; }
+.right-page { border-radius: 0 20px 20px 0; }
+
+/* --- EL ESPIRAL --- */
+.scrapbook-spiral {
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: rgba(0,0,0,0.03); /* Sombrita en el doblez */
+}
+.hole {
+    width: 15px; height: 15px;
+    background: #3d2d24;
+    border-radius: 50%;
+    box-shadow: inset 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+/* --- ELEMENTOS DECORATIVOS --- */
+.scrapbook-title {
+    font-family: 'Gaegu', cursive;
+    font-size: 4rem;
+    color: #3d2d24;
+    line-height: 0.9;
+}
+
+.tape {
+    position: absolute;
+    top: -10px; left: 50%;
+    transform: translateX(-50%);
+    width: 40px; height: 15px;
+  background: rgba(144, 202, 249, 0); /* Cinta azul transparente */
+}
+
+/* Cuadro de contenidos */
+.contents-box {
+    background: #fff;
+    border: 2px solid #3d2d24;
+    padding: 20px;
+    width: 250px;
+    margin-top: 30px;
+    position: relative;
+    font-family: 'Gaegu', cursive;
+    transform: rotate(-2deg);
+}
+
+/* Post-it */
+.post-it {
+background: #f8fad7;
+border: 2px solid #3d2d24;
+padding: 20px;
+width: 200px;
+position: absolute;
+bottom: 40px; right: 20px;
+font-family: 'Gaegu', cursive;
+font-size: 1.2rem;
+transform: rotate(4deg);
+box-shadow: 3px 3px 0px rgba(0,0,0,0.1);
+}
+
+/* Polaroid */
+.polaroid {
+background: #fff;
+padding: 10px 10px 30px 10px;
+border: 2px solid #3d2d24;
+width: 200px;
+position: absolute;
+top: 60px; left: 40px;
+transform: rotate(5deg);
+font-family: 'Gaegu', cursive;
+text-align: center;
+}
+.polaroid img { width: 100%; height: auto; border: 1px solid #ccc; }
+
+/* Nota de texto derecha */
+.text-note {
+background: #fdf5e6;
+border: 2px solid #3d2d24;
+padding: 20px;
+width: 220px;
+position: absolute;
+bottom: 80px; left: 80px;
+transform: rotate(-3deg);
+font-family: 'Gaegu', cursive;
+font-size: 1.3rem;
+}
+
+/* Pestañas (Tabs) */
+.tabs-container {
+position: absolute;
+right: -80px; top: 50px;
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+.tab {
+border: 2px solid #3d2d24;
+padding: 8px 15px;
+border-radius: 10px;
+font-family: 'Gaegu', cursive;
+font-weight: bold;
+cursor: pointer;
+}
+.tab-pink { background: #f8bbd0; }
+.tab-blue { background: #bbdefb00; }
+.tab-yellow { background: #fff9c4; }
+
+.section-title {
+font-family: 'Gaegu', cursive;
+font-size: 2.2rem;
+color: #3d2d24;
+margin: 0 0 15px 0;
+text-align: center;
+}
+
+/* Contenedor principal de las 2 fichas */
+.evidence-container {
+display: flex;
+flex-direction: column;
+gap: 20px;
+align-items: center;
+}
+
+/* Ficha de cada evidencia */
+.evidence-card {
+display: flex;
+align-items: center;
+gap: 12px;
+background: #ffffff;
+padding: 10px;
+border: 2px solid #3d2d24;
+border-radius: 8px;
+width: 95%;
+position: relative;
+box-shadow: 3px 3px 0px rgba(61, 45, 36, 0.15);
+}
+
+/* Inclinaciones caseras para el efecto scrapbook */
+.card-1 {
+transform: rotate(-2deg);
+}
+
+.card-2 {
+transform: rotate(2deg);
+}
+
+.card-3 {
+transform: rotate(-1deg);
+}
+
+.card-4 {
+transform: rotate(1deg);
+}
+
+/* Foto cuadrada/rectángular */
+.photo-frame {
+width: 100px;
+height: 90px;
+flex-shrink: 0;
+border: 1.5px solid #3d2d24;
+border-radius: 4px;
+overflow: hidden;
+}
+
+.photo-frame img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+/* Texto de los detalles */
+.details-note {
+font-family: 'Gaegu', cursive;
+color: #3d2d24;
+}
+
+.details-note h4 {
+margin: 0 0 4px 0;
+font-size: 1.2rem;
+color: #f16ca4;
+}
+
+.details-note p {
+margin: 0;
+font-size: 0.95rem;
+line-height: 1.1;
+}
+
+/* Botones de pasar página */
+.nav-page-btn {
+position: absolute;
+bottom: 15px;
+background: #f16ca4;
+color: white;
+border: 2px solid #3d2d24;
+border-radius: 20px;
+padding: 5px 15px;
+font-family: 'Gaegu', cursive;
+font-size: 1.1rem;
+font-weight: bold;
+cursor: pointer;
+box-shadow: 2px 2px 0px #3d2d24;
+transition: transform 0.1s ease;
+}
+
+.nav-page-btn:hover {
+transform: scale(1.05);
+}
+
+/* Ubicación del botón "Siguiente" */
+.next-btn {
+right: 20px;
+}
+
+/* Ubicación del botón "Atrás" */
+.prev-btn {
+left: 20px;
+}
+
+#Activities {
+  scroll-margin-top: 5rem;
+}
+
+/* Contenedor Flex para alinear Laptop + Avatar */
+.laptop-wrapper {
+  display: flex;
+  align-items: flex-start; 
+  justify-content: center;
+  gap: 35px;
+  width: 95%;
+  max-width: 1300px;
+  margin: 3rem auto;
+}
+/* Ajuste de dimensiones de la laptop */
+.interactive-laptop {
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 780px;
+height: auto;
+user-select: none;
+}
+
+/* Tarjeta y marco de la foto al lado */
+.laptop-side-image {
+  position: relative;
+  padding: 10px;
+  border: 2.5px solid #3d2d2400;
+  border-radius: 12px;
+  transform: rotate(3deg);
+  transition: transform 0.2s ease;
+  margin-top: -630px; 
+  margin-left: 800px;
+}
+
+.laptop-side-image:hover {
+  transform: rotate(0deg) scale(1.02);
+}
+
+.laptop-side-image img {
+  width: 700px;
+  height: 620px;
+  object-fit: contain;
+  display: block;
+}
