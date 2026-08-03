@@ -1,0 +1,354 @@
+<Doctype html>
+<html class="html">
+<head>
+    <title>Fer's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Bebas+Neue&family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Gaegu:wght@400;700&family=Special+Elite&family=Ultra&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+
+    <nav class="nav">
+        <div class="logo">
+            <h1>Fer</h1>
+        </div>
+
+        <div class="nav-links">
+        <a href="#about">ME</a>
+        <a href="#Activities">Activities</a>
+        </div>
+    </nav>
+
+    <header class="about-me">
+
+    <div class="title">
+    <img src="fer.png" alt="Fer" class="fer-image">
+    </div>
+
+    <a href="#about" class="pill-btn">meet me ↓</a>
+    </header>
+
+
+    <section id="about" class="about-collage-container">
+        
+<!--LEFT-->       
+            <div class="photos-column-left">
+            <div class="mini-frame"><img src="C1.jpeg" alt="jjk"></div>
+            <div class="mini-frame"><img src="C2.jpeg" alt="snk"></div>
+            <div class="mini-frame"><img src="C3.jpeg" alt="kny"></div>
+        </div>
+
+        <!-- Central Rosa -->
+        <div class="pink-speech-bubble">
+            <h2 class="about-title" style="font-size: 5.8rem;">about me!</h2>
+            <div class="handwritten-body">
+                <p>Hey! I'm Fer :)</p>
+                <p>
+                    Welcome to the part of the website where i'm supposed to talk about myself. Driven by a childhood curiosity for how things work, I see technology as our modern version of magic: a powerful bridge between imagination and reality.
+                </p>
+                <p>
+                    My journey spans connecting seemingly unrelated fields, blending programming, storytelling, art, and science to build meaningful tools.
+                </p>
+                <p>
+                    Beyond code and circuits, I value collaboration, shared learning, and bringing ambitious ideas to life alongside like-minded innovators.
+                    My goal is to keep inventing, experimenting, and proving that art and science combined can transform the future. 
+                    thanks for clicking around, and i hope you have fun exploring my site!
+                </p>
+            </div>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="photos-column-right">
+            <div class="mini-frame"><img src="C4.jpeg" alt="naruto"></div>
+            <div class="mini-frame"><img src="C7.jpeg" alt="gojosatoru"></div>
+            <div class="mini-frame"><img src="C10.jpeg" alt="toji"></div>
+        </div>
+
+    </section>
+
+<div id="Activities" class="interactive-laptop">
+
+    <div class="laptop-lid">
+    <div class="laptop-screen">
+    
+    <div class="laptop-webcam"></div>
+
+    <div class="laptop-desktop">
+        <div class="desktop-icons">
+        
+        <div class="desktop-icon" onclick="openScrapbook('extracurriculars')">
+        <div class="folder-img">📁</div>
+        <span class="icon-label">Extracurriculars</span>
+        </div>
+
+        <div class="desktop-icon" onclick="openScrapbook('friends')">
+        <div class="folder-img">📁</div>
+        <span class="icon-label">Friends</span>
+        </div>
+
+        <div class="desktop-icon" onclick="openScrapbook('hobbies')">
+        <div class="folder-img">📁</div>
+        <span class="icon-label">Hobbies</span>
+        </div>
+        
+        </div>
+
+        <div class="laptop-window" id="laptop-explorer-window">
+        <div class="window-titlebar">
+            <span class="window-title" id="explorer-window-title">Folder: animations</span>
+            <button class="window-btn-close" id="explorer-close-btn" aria-label="Close window" onclick="closeWindow('laptop-explorer-window')">X</button>
+        </div>
+        <div class="window-content">
+            <div class="files-grid" id="explorer-files-grid">
+            </div>
+        </div>
+        </div>
+
+        <div class="laptop-window" id="laptop-player-window">
+        <div class="window-titlebar">
+            <span class="window-title" id="player-window-title">playing: clip.mp4</span>
+            <button class="window-btn-close" id="player-close-btn" aria-label="Close media player" onclick="closeWindow('laptop-player-window')">X</button>
+        </div>
+        <div class="window-content player-content" id="player-media-container">
+        </div>
+        </div>
+
+    </div>
+
+    <div class="bezel-brand">Fer book</div>
+    </div>
+    </div>
+
+    <div class="laptop-hinge"></div>
+
+    <div class="laptop-base">
+    <div class="trackpad"></div>
+    </div>
+</div>
+
+</div>
+
+<div id="scrapbook-modal" style="display: none;">
+<div class="scrapbook-book">
+    
+    <!-- Botón para cerrar -->
+    <button class="close-book-btn" onclick="closeScrapbook()">X</button>
+
+    <!-- PÁGINA IZQUIERDA -->
+    <div class="scrapbook-page left-page">
+    <h1 class="scrapbook-title">Fer's<br>Portfolio</h1>
+    
+    <!-- Cuadro de Contenido -->
+    <div class="contents-box">
+        <div class="tape"></div>
+        <h3>CONTENTS</h3>
+        <p>Extracurriculars — Pages 1-2</p>
+        <p>Friends — Pages 3-4</p>
+        <p>Hobbies — Pages 5-6</p>
+    </div>
+
+    <!-- Post-it -->
+    <div class="post-it">
+        <div class="tape"></div>
+        THAT'S ALL FOLKS!
+    </div>
+    </div>
+
+    <!-- EL ESPIRAL DEL MEDIO -->
+    <div class="scrapbook-spiral">
+    <div class="hole"></div><div class="hole"></div><div class="hole"></div>
+    <div class="hole"></div><div class="hole"></div><div class="hole"></div>
+    <div class="hole"></div><div class="hole"></div>
+    </div>
+
+    <!-- PÁGINA DERECHA -->
+    <div class="scrapbook-page right-page">
+    
+    <!-- Pestañas laterales -->
+    <div class="tabs-container">
+        <div class="tab tab-extracurriculars" onclick="switchTab('extracurriculars')">Extracurriculars</div>
+        <div class="tab tab-friends" onclick="switchTab('friends')">Friends</div>
+        <div class="tab tab-hobbies" onclick="switchTab('hobbies')">Hobbies</div>
+    </div>
+
+    <!-- ================= PÁGINA EXTRACURRICULARS ================= -->
+    <div id="tab-extracurriculars" class="tab-content">
+        <div id="extracurriculars-page-1" class="page-content">
+        <h2 class="section-title">Extracurriculars</h2>
+
+        <div class="evidence-container">
+            <div class="evidence-card card-1">
+            <div class="tape"></div>
+            <div class="photo-frame"><img src="J3.jpeg" alt="Activity 1"></div>
+            <div class="details-note">
+                <h4>Volunteering at school</h4>
+                <p>Proposed a school peer tutoring program; approved by admin to mentor struggling underclassmen and boost their academic performance.</p>
+            </div>
+            </div>
+
+            <div class="evidence-card card-2">
+            <div class="tape"></div>
+            <div class="photo-frame"><img src="J6.jpg" alt="Activity 2"></div>
+            <div class="details-note">
+                <h4>Workshop</h4>
+                <p>I helped my sister Eliana with a small pastry business at the ICPNA during the hours when student traffic was heaviest.</p>
+            </div>
+            </div>
+
+            <div class="evidence-card card-3">
+            <div class="tape"></div>
+            <div class="photo-frame"><img src="J5.jpg" alt="Activity 3"></div>
+            <div class="details-note">
+                <h4>Book</h4>
+                <p>Wrote the mystery novel "Otra historia para contar" on Inkitt, with a surname AKROs.
+                You can read it here: <a href="https://www.inkitt.com/stories/1833401" target="_blank">Read on Inkitt</a>
+                </p>
+            </div>
+            </div>
+
+            <div class="evidence-card card-4">
+            <div class="tape"></div>
+            <div class="photo-frame"><img src="J4.jpeg" alt="Activity 4"></div>
+            <div class="details-note">
+                <h4>English</h4>
+                <p>Intensive English program at ICPNA, reaching B2 intermediate level.</p>
+            </div>
+            </div>
+        </div>
+
+        <button class="nav-page-btn next-btn" onclick="changePage(2)">NEXT</button>
+        </div>
+
+        <div id="extracurriculars-page-2" class="page-content" style="display: none;">
+        <h2 class="section-title">Extracurriculars — Vol. 2</h2>
+
+        <div class="evidence-container">
+            <div class="evidence-card card-1">
+            <div class="tape"></div>
+            <div class="photo-frame"><img src="J2.jpeg" alt="Actividad 3"></div>
+            <div class="details-note">
+                <h4>Act</h4>
+                <p>Participated as an actress in the school play “Médico a palos” during academic Olympics event.</p>
+            </div>
+            </div>
+
+            <div class="evidence-card card-2">
+            <div class="tape"></div>
+            <div class="photo-frame"><img src="J1.jpg" alt="Actividad 4"></div>
+            <div class="details-note">
+                <h4>Olimpyads</h4>
+                <p>Participated in math olympiads, achieving 7th place in school-level competition.
+                You can find the certificate here: <a href="https://www.olimpiadas.iersm.edu.pe/examenes/2024/S3_RES_RM_2024.pdf" target="_blank">View Certificate</a>
+                </p>
+            </div>
+            </div>
+        </div>
+
+        <button class="nav-page-btn prev-btn" onclick="changePage(1)">GO BACK</button>
+        </div>
+    </div> 
+
+    <!-- ================= SECCIÓN FRIENDS ================= -->
+    <div id="tab-friends" class="tab-content" style="display: none;">
+        <h2 class="section-title">Friends</h2>
+        <div class="evidence-container">
+        <div class="evidence-card card-1">
+            <div class="tape"></div>
+            <div class="photo-frame"><img src="F2.jpeg" alt="Friend 1"></div>
+            <div class="details-note">
+            <h4>Besties!</h4>
+            <p>Friends I met at ICPNA.</p>
+            </div>
+        </div>
+
+        <div class="evidence-card card-2">
+            <div class="tape"></div>
+            <div class="photo-frame"><img src="F3.jpeg" alt="Friend 2"></div>
+            <div class="details-note">
+            <h4>Besties from school</h4>
+            <p>They were like a family.</p>
+            </div>
+        </div>
+
+        <div class="evidence-card card-3">
+            <div class="tape"></div>
+            <div class="photo-frame"><img src="F1.jpeg" alt="Friend 3"></div>
+            <div class="details-note">
+            <h4>Family</h4>
+            <p>I really appreciate them.</p>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- ================= SECCIÓN HOBBIES ================= -->
+    <div id="tab-hobbies" class="tab-content" style="display: none;">
+        <h2 class="section-title">Hobbies</h2>
+        <div class="evidence-container">
+        <div class="evidence-card card-1">
+            <div class="tape"></div>
+            <div class="photo-frame"><img src="H3.jpg" alt="Project 1"></div>
+            <div class="details-note">
+            <h4>Programming</h4>
+            <p>I like to program and design websites, applications or games. Like this website</p>
+            </div>
+        </div>
+
+        <div class="evidence-card card-2">
+            <div class="tape"></div>
+            <div class="photo-frame"><img src="H1.jpeg" alt="Project 2"></div>
+            <div class="details-note">
+            <h4>Working with Arduino</h4>
+            <p>It's a fun way to combine electronics and programming, and I enjoy the challenge of bringing my ideas to life. That photo is my arduino setup </p>
+            </div>
+        </div>
+
+        <div class="evidence-card card-3">
+            <div class="tape"></div>
+            <div class="photo-frame"><img src="H2.jpeg" alt="Project 3"></div>
+            <div class="details-note">
+            <h4>Designing</h4>
+            <p>I enjoy creating visual designs and layouts for various projects. I made that book and I draw all my ideas in it.</p>
+            </div>
+        </div>
+
+        <div class="evidence-card card-4">
+            <div class="tape"></div>
+            <div class="photo-frame"><img src="H4.jpeg" alt="Project 4"></div>
+            <div class="details-note">
+            <h4>Cooking Desserts</h4>
+            <p>It's one of my favorite hobbies to bake delicious desserts.</p>
+            </div>
+        </div>
+
+        <div class="evidence-card card-1">
+            <div class="tape"></div>
+            <div class="photo-frame"><img src="H5.jpg" alt="Project 5"></div>
+            <div class="details-note">
+            <h4>Karaoke</h4>
+            <p>I like to sing and have fun. It's my way to relieve stress and have a good time with friends and family.</p>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    </div> 
+</div> 
+</div> 
+
+<div class="laptop-wrapper">
+
+    <div id="Activities" class="interactive-laptop">
+    </div>
+
+    <div class="laptop-side-image">
+        <div class="tape"></div> 
+        <img src="ME2 (1).png" alt="Decoración">
+    </div>
+
+</div>
+<script src="edit.js"></script>
+
+</body>
+</html>
